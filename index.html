@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Apology Message</title>
+    <!-- Load Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Set standard font and styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fce4ec; /* Very light pink background */
+            color: #4a4a4a;
+        }
+        .heart-icon {
+            color: #e91e63; /* Deep pink heart color */
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <!-- Main Message Card -->
+    <div class="max-w-md w-full bg-white p-8 md:p-10 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl border border-pink-100 text-center">
+
+        <!-- Header with Icon -->
+        <div class="mb-8">
+            <svg class="heart-icon w-16 h-16 mx-auto mb-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path></svg>
+            <h1 class="text-4xl font-extrabold text-pink-700">An Apology from the RedBull of My Heart</h1>
+        </div>
+
+        <!-- Apology Message Content -->
+        <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            Hey bandorty,<br>
+            bandorty,
+I’ve been thinking a lot about you, wallahi. Whatever we had still means a lot to me. I know I was confused back then, and maybe I hurt you — and for that, I’m truly sorry. I regret how I made you feel.
+
+I’m willing to give us another chance, to start a new chapter together — one that’s better and stronger than before.
+But what really matters is… would you want to? ❤️
+        </p>
+
+        <!-- Buttons Area (Accept and Decline) -->
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
+            
+            <!-- Accept Button -->
+            <a id="accept-apology-btn" 
+               href="mailto:placeholder@example.com?subject=💖%20I%20Accept%20Your%20Apology%2C%20My%20Love&body=My%20love%2C%20I%20accept%20your%20apology%20and%20hope%20we%20can%20move%20past%20what%20happened.%20I%20love%20you!%20(Sent%20from%20the%20Apology%20Page)"
+               class="flex-1 text-center py-3 px-6 rounded-full font-bold text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-4 focus:ring-pink-400/70 transition duration-150 shadow-lg transform hover:scale-[1.03] text-lg">
+                I Accept Your Apology ❤️
+            </a>
+
+            <!-- Decline Button -->
+            <a id="decline-apology-btn" 
+               href="mailto:placeholder@example.com?subject=💔%20I%20Haven%27t%20Accepted%20Your%20Apology%20Yet&body=My%20love%2C%20I%20need%20some%20time%20and%20haven%27t%20accepted%20your%20apology%20yet.%20(Sent%20from%20the%20Apology%20Page)"
+               class="flex-1 text-center py-3 px-6 rounded-full font-bold text-pink-600 bg-white border-2 border-pink-600 hover:bg-pink-50 hover:text-pink-700 focus:outline-none focus:ring-4 focus:ring-pink-300/70 transition duration-150 shadow-lg transform hover:scale-[1.03] text-lg">
+                I Decline Your Apology 💔
+            </a>
+        </div>
+
+        <!-- Small Reminder -->
+        <p class="mt-8 text-sm text-gray-400">
+            *Your email application will open to send your response.
+        </p>
+    </div>
+
+    <script>
+        // !! CHANGE THIS EMAIL TO YOUR REAL EMAIL ADDRESS !!
+        const YOUR_EMAIL = "totybont@gmail.com"; 
+        document.getElementById('accept-apology-btn').href = document.getElementById('accept-apology-btn').href.replace("placeholder@example.com", YOUR_EMAIL);
+        document.getElementById('decline-apology-btn').href = document.getElementById('decline-apology-btn').href.replace("placeholder@example.com", YOUR_EMAIL);
+    </script>
+</body>
+</html>
